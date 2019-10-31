@@ -1,5 +1,6 @@
 package com.pegs.StudentManagementApp.Model;
 
+import io.swagger.annotations.ApiModelProperty;
 import net.bytebuddy.dynamic.loading.InjectionClassLoader;
 
 import javax.persistence.Entity;
@@ -11,6 +12,7 @@ import javax.persistence.Id;
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @ApiModelProperty(hidden = true)
     private Integer sid;
     private String sname;
     private String CollegeName;
