@@ -1,0 +1,33 @@
+2019-11-04 11:30:56.045  INFO 2304 --- [main] c.p.S.StudentManagementAppApplication    : Starting StudentManagementAppApplication on DESKTOP-1UPE7BQ with PID 2304 (C:\Users\TT124\Downloads\StudentManagementApp\StudentManagementApp\target\classes started by TT124 in C:\Users\TT124\Downloads\StudentManagementApp\StudentManagementApp)
+2019-11-04 11:30:56.051 DEBUG 2304 --- [main] c.p.S.StudentManagementAppApplication    : Running with Spring Boot v2.2.0.RELEASE, Spring v5.2.0.RELEASE
+2019-11-04 11:30:56.052  INFO 2304 --- [main] c.p.S.StudentManagementAppApplication    : No active profile set, falling back to default profiles: default
+2019-11-04 11:30:57.163  INFO 2304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-04 11:30:57.501  INFO 2304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 191ms. Found 1 repository interfaces.
+2019-11-04 11:30:57.802  INFO 2304 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-04 11:30:58.004  INFO 2304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-04 11:30:58.013  INFO 2304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-04 11:30:58.014  INFO 2304 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-04 11:30:58.112  INFO 2304 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-04 11:30:58.112  INFO 2304 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1983 ms
+2019-11-04 11:30:58.147  INFO 2304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-04 11:30:58.235  INFO 2304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-04 11:30:58.239  INFO 2304 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:Student'
+2019-11-04 11:30:58.356  INFO 2304 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-04 11:30:58.514  INFO 2304 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-11-04 11:30:58.617  INFO 2304 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-04 11:30:58.715  INFO 2304 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-11-04 11:30:59.288  INFO 2304 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-04 11:30:59.294  INFO 2304 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-04 11:30:59.707  WARN 2304 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-04 11:30:59.843  INFO 2304 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-11-04 11:30:59.984  INFO 2304 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-04 11:31:00.159  INFO 2304 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-04 11:31:00.177  INFO 2304 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-04 11:31:00.223  INFO 2304 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-04 11:31:00.431  INFO 2304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-04 11:31:00.434  INFO 2304 --- [main] c.p.S.StudentManagementAppApplication    : Started StudentManagementAppApplication in 4.982 seconds (JVM running for 6.055)
+2019-11-04 11:31:35.576  INFO 2304 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-04 11:31:35.577  INFO 2304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-04 11:31:35.595  INFO 2304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2019-11-04 11:31:56.938 TRACE 2304 --- [http-nio-8080-exec-4] c.p.S.Controller.StudentController       : addStudent Method in StudentController is accessed.
+2019-11-04 11:31:57.054 TRACE 2304 --- [http-nio-8080-exec-4] c.p.S.Controller.StudentController       : Student Obj is saved to Database
