@@ -1,0 +1,11 @@
+Project : StudentManagementApp
+-----------------------------------------------
+- Tech Stack
+  - Spring Boot.
+  - H2 - in memory Database.
+  - Spring Data JPA - uses Hibernate as JPA implementation.
+  - Swagger - used for Documenting Rest API’s.
+  - Logback - used for logging
+- It is RESTful Web Service.
+- Implemented CRUD operations.
+- Github link : https://github.com/srikanthmergu04/StudentManagementApp_RESTfulWebService_SpringBoot.git
