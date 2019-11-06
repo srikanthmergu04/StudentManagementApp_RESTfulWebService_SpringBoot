@@ -18,6 +18,8 @@ public class StudentController {
 
     Logger logger = LoggerFactory.getLogger(StudentController.class);
 
+
+
     @PostMapping("/Students")
     public Student addStudent(@RequestBody Student student){
         logger.trace("addStudent Method in StudentController is accessed.");
