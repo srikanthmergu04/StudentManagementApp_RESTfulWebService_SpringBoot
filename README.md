@@ -15,20 +15,21 @@ Project : StudentManagementApp
 Cache Implementation using Spring-Data-Redis
  ---------------------------------------------------
  - #### Installing Redis on windows 10
-    - Downlad link : https://github.com/microsoftarchive/redis/releases
-        - you can download either .zip or .msi , and extract it
+    - Download link : https://github.com/microsoftarchive/redis/releases
+        - you can download either .zip or .msi.
+        - extract it after downloading.
     
   - #### Starting Redis Server Locally
     - open CMD and point to the redis installation directory and execute the below command.
             
             `redis-server`
-    - you can see "**server started**" message on console.
+    - you can see "**server started**" message on the console.
   - #### Cache Configuration in application.properties file
     - `spring.cache.type=redis`
     - `spring.redis.host=localhost`
     -  `spring.redis.port=6379`
     
-    - you can see `application.properties` file for remaining configurations.
+    - you can also see other properties in `application.properties` file.
         
      
          
