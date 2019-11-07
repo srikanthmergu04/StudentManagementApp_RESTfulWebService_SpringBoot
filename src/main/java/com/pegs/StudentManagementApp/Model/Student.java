@@ -2,11 +2,12 @@ package com.pegs.StudentManagementApp.Model;
 
 import io.swagger.annotations.ApiModelProperty;
 import net.bytebuddy.dynamic.loading.InjectionClassLoader;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.data.redis.core.RedisHash;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Cacheable
 @Entity
 public class Student implements Serializable {
     @Id
@@ -38,5 +39,14 @@ public class Student implements Serializable {
 
     public void setCollegeName(String collegeName) {
         CollegeName = collegeName;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "sid=" + sid +
+                ", sname='" + sname + '\'' +
+                ", CollegeName='" + CollegeName + '\'' +
+                '}';
     }
 }
