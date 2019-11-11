@@ -31,6 +31,12 @@ Cache Implementation using Spring-Data-Redis
     
     - you can also see other properties in `application.properties` file.
         
-     
-         
+Implementing Jasper Reports using ireport tool [for Designing]
+--------------------------------------------------
+- Download : https://sourceforge.net/projects/ireport/files/iReport/iReport-5.6.0/iReport-5.6.0.zip/download   
+- after downloading extract it and open `ireport.conf` and
+  `jdkhome="C:\Program Files\Java\jre7"`  
+ - open **ireport tool**   by going to bin folder of installation directory.
+ - create a report as you like then get .jrxml file and use it in your application/project.
+ - open `ReportService.java` file under Service package for implementation.    
   
