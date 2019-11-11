@@ -15,7 +15,7 @@ public class Student implements Serializable {
     @ApiModelProperty(hidden = true)
     private Integer sid;
     private String sname;
-    private String CollegeName;
+    private String collegeName;
 
     public Integer getSid() {
         return sid;
@@ -34,11 +34,11 @@ public class Student implements Serializable {
     }
 
     public String getCollegeName() {
-        return CollegeName;
+        return collegeName;
     }
 
     public void setCollegeName(String collegeName) {
-        CollegeName = collegeName;
+        this.collegeName = collegeName;
     }
 
     @Override
@@ -46,7 +46,7 @@ public class Student implements Serializable {
         return "Student{" +
                 "sid=" + sid +
                 ", sname='" + sname + '\'' +
-                ", CollegeName='" + CollegeName + '\'' +
+                ", CollegeName='" + collegeName + '\'' +
                 '}';
     }
 }

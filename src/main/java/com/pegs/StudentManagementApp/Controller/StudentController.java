@@ -1,12 +1,15 @@
 package com.pegs.StudentManagementApp.Controller;
 
 import com.pegs.StudentManagementApp.Model.Student;
+import com.pegs.StudentManagementApp.Service.ReportService;
 import com.pegs.StudentManagementApp.Service.StudentServiceImpl;
+import net.sf.jasperreports.engine.JRException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.Optional;
 
@@ -15,6 +18,9 @@ public class StudentController {
 
     @Autowired
     private StudentServiceImpl studentService;
+
+    @Autowired
+    private ReportService reportService;
 
     Logger logger = LoggerFactory.getLogger(StudentController.class);
 
@@ -54,6 +60,12 @@ public class StudentController {
         logger.trace("deleteStudentById method in StudentController is accessed.");
         studentService.deleteStudentById(sid);
         return "Deleted..";
+    }
+
+    @GetMapping("/Students/report/{format}")
+    public String generateReport(@PathVariable String format) throws FileNotFoundException, JRException {
+        final String s = reportService.exportReport(format);
+        return s;
     }
 
 }
