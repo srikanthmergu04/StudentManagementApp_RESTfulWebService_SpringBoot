@@ -7,6 +7,7 @@ Project : StudentManagementApp
   - Swagger - used for Documenting Rest API’s.
   - Logback - used for logging.
   - Spring-Data-Redis for Caching.
+  - JasperReports - used ireport tool for Designing Report.
 - It is RESTful Web Service.
 - Implemented CRUD operations.
 - Implemented Caching using Redis.
